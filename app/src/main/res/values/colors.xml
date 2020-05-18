@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="orange">#ef4e33</color>
+    <color name="black">#000000</color>
+    <color name="bg_clolor">#fafafa</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ef4e33</color>
+    <color name="green">#4DC344</color>
+    <color name="Blue">#425BB4</color>
+    <color name="pastActive">#969696</color>
+</resources>

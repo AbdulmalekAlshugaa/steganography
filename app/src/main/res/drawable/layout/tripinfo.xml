@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_margin="7dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:id="@+id/On_the_way"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="45"
+                        android:id="@+id/dateTrcking"
+                        android:textSize="14sp"
+                        android:lines="1"
+                        android:textStyle="bold"
+                        android:text="19 August 2019, 7:30 pm"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:id="@+id/StautsTracking"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="On The Way "
+                        android:padding="10dp"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:id="@+id/Price"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="13"
+                        android:padding="10dp"
+                        android:textColor="@color/green"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="MYR"
+                        android:padding="10dp"
+                        android:textColor="@color/colorPrimary"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/i1"
+                            android:layout_marginTop="16.3dp"
+                            android:layout_marginLeft="14.4dp"
+                            android:layout_width="25dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/pin_black"/>
+
+                        <ImageView
+                            android:id="@+id/i2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18.9dp"
+                            android:layout_marginLeft="26dp"
+                            android:layerType="software"
+                            android:src="@drawable/rect_dotted" />
+
+                        <ImageView
+                            android:id="@+id/i3"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_location_searching_black_24dp"
+                            android:layout_marginLeft="19dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10.4dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/From_Place"
+                            android:textSize="14sp"
+                            android:lines="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="KLIA 2"
+                            android:layout_marginLeft="14.3dp"
+                            android:padding="6dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ToPointsTracking"
+                            android:textSize="14sp"
+                            android:lines="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="Mandarin Oriental Hotel KL"
+                            android:layout_marginLeft="14.3dp"
+                            android:padding="6dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

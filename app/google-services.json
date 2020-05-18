@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "713509772000",
+    "firebase_url": "https://image-steganography-95fa3.firebaseio.com",
+    "project_id": "image-steganography-95fa3",
+    "storage_bucket": "image-steganography-95fa3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713509772000:android:d9bfbad36b0ffbc3134e85",
+        "android_client_info": {
+          "package_name": "com.Rakan.steganography"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713509772000-dbj7ksnt12spalmsq057avcfj2ri7s2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Rakan.steganography",
+            "certificate_hash": "0b04e728c55bd5e9fdc98cb7f67a411aab4e8aa5"
+          }
+        },
+        {
+          "client_id": "713509772000-i8ldb2k74cup5j7b1lranrl34orhbnv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARMJwyZ2dyA7B5nPGdxd_A4aUj5IEte84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713509772000-i8ldb2k74cup5j7b1lranrl34orhbnv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

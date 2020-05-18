@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.MainActivity">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="400dp"
+                android:layout_height="wrap_content">
+
+
+                <com.example.trainsystem.customfonts.EditText_Roboto_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Customer Dashboard"
+                    android:textColor="#4a4a4a"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:onClick="Setting"
+                    android:src="@drawable/ic_settinges"
+                    android:tint="#ef4e33" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/imgUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/UserImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:onClick="UserProfile"
+                    app:civ_border_color="@color/red"
+                    android:src="@drawable/userprofile" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:foregroundGravity="center"
+                    android:textColor="@color/black"
+                    android:text="Ahmed Ali "
+                    android:layout_below="@+id/UserImage"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:id="@+id/paymentContiner"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:id="@+id/BookingID"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="From Place"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                />
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:id="@+id/fromplace"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Select from place "
+                android:padding="10dp"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:id="@+id/ToPlaceContiner"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="@string/to_place"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                />
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:id="@+id/ToPlace"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="@string/select_to_place"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Next Train"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/Time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="8:00 pm"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="90dp"
+            android:orientation="vertical">
+            <com.example.trainsystem.customfonts.Button_sfuitext_regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Map"
+                android:onClick="ViewPage"
+                android:layout_margin="20dp"
+                android:background="@drawable/bt_uiborder"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:drawableLeft="@drawable/ic_credit_card_black_24dp"
+                android:drawableStart="@drawable/ic_credit_card_black_24dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:id="@+id/PriceOfTheTrip"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="30 "
+            android:padding="10dp"
+            android:textColor="@color/green"
+            />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:id="@+id/Mur"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="MYR"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Purchase"
+            android:layout_margin="30dp"
+            android:text="@string/purchase"
+            android:onClick="PushUser"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_uiborder"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

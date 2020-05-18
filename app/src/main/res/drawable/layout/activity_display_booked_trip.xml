@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.DisplayBookedTrip">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:id="@+id/bill_info_bar"
+
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:layout_scrollFlags="scroll|enterAlways">
+                    </androidx.appcompat.widget.Toolbar>
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:lines="1"
+
+                    android:textStyle="normal"
+                    android:textColor="@color/pastActive"
+                    android:text="Booking Summary:"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="20dp"
+                    android:background="@color/white"
+                    app:cardElevation="20dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:id="@+id/paymentContiner"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="10"
+                                android:textSize="14sp"
+                                android:lines="1"
+                                android:textStyle="bold"
+                                android:drawableLeft="@drawable/ic_credit_card_black_24dp"
+                                android:drawableStart="@drawable/ic_credit_card_black_24dp"
+                                android:padding="10dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:id="@+id/BookingID"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="KULM/0-1988989-0442"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30"
+                                android:id="@+id/StautsDetials"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:text="COMPLETED"
+                                android:padding="10dp"
+                                android:textColor="@color/green"
+                                />
+
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="0dp"
+                            android:background="@color/red" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="17sp"
+                                android:lines="1"
+                                android:textStyle="normal"
+                                android:textColor="@color/red"
+                                android:text="Personal Info:"
+                                android:padding="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:id="@+id/Completed"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="40"
+                                android:textSize="14sp"
+                                android:lines="1"
+                                android:textStyle="bold"
+                                android:text="Email Address"
+                                android:textColor="@color/black"
+                                android:padding="5dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="60"
+                                android:id="@+id/NameOfTheCustomer"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="Ahmed Ali "
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="0dp"
+                            android:background="@color/red" />
+
+
+
+                        <!--// Delivering from -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/DeliverFrom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="17sp"
+                                android:lines="1"
+                                android:textStyle="normal"
+                                android:textColor="@color/red"
+                                android:text="Trip Info:"
+                                android:padding="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:id="@+id/DeleveringfromContiner"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="10"
+                                android:textSize="14sp"
+                                android:lines="1"
+                                android:textStyle="bold"
+                                android:drawableLeft="@drawable/ic_location_searching_black_24dp"
+                                android:drawableStart="@drawable/ic_location_searching_black_24dp"
+                                android:textColor="@color/black"
+                                android:padding="5dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="90"
+                                android:id="@+id/FromPlaceDispaly"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="Kuala Lumpur International Airport "
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:id="@+id/DeleveringTOContiner"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="10"
+                                android:textSize="14sp"
+                                android:lines="1"
+                                android:textStyle="bold"
+                                android:drawableLeft="@drawable/pin_black"
+                                android:drawableStart="@drawable/pin_black"
+                                android:textColor="@color/black"
+                                android:padding="5dp"
+                                />
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="90"
+                                android:id="@+id/ToPlaceDispaly"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="Kuala Lumpur International Airport "
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="0dp"
+                            android:background="@color/red" />
+
+                        <!--// Toral  to-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="60"
+                                android:textSize="14sp"
+                                android:lines="1"
+                                android:textStyle="bold"
+                                android:text="Total Price :"
+                                android:textColor="@color/black"
+                                android:padding="5dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="20"
+                                android:id="@+id/priceTrip"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="30"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="20"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:text="MYR"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="0dp"
+                            android:background="@color/red" />
+
+
+
+
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                            <Button
+                                android:id="@+id/PrintReceipt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="30dp"
+                                android:background="@drawable/bt_uiborder"
+                                android:onClick="Print"
+                                android:text="Print as a PDF"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

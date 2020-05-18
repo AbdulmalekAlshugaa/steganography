@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".activites.Feedback">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Feedback "
+            android:textStyle="bold"
+            android:id="@+id/rateHeader"
+            android:gravity="center"
+            android:layout_centerHorizontal="true" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"
+            android:id="@+id/separator"
+            android:layout_below="@+id/rateHeader"
+            android:layout_marginTop="5dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/errorTV"
+            android:text="Something Went Wrong. Please Try Again"
+            android:layout_below="@+id/separator"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:background="@color/red"/>
+
+        <EditText
+            android:layout_below="@+id/errorTV"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write Your Review(200 Characters)"
+            android:lines="5"
+            android:id="@+id/reviewED"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reviewED"
+            android:layout_gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Cancel"
+                android:id="@+id/cancelRateBtn"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Submit"
+                android:onClick="PushFeedback"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"
+                android:id="@+id/submitRateBtn"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
